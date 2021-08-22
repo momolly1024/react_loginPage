@@ -16,7 +16,7 @@ function Login() {
     <div>
       <div className="container" id="container">
         <div className="form-container sign-up-container">
-          <form action="#">
+          <form action="#" className="formMobile">
           <h1>Create Account</h1>
           <div className="social-container">
             <a href="https://google.com" className="social"><FontAwesomeIcon icon={faFacebook} /></a>
@@ -28,6 +28,9 @@ function Login() {
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <button>Sign Up</button>
+          <p className="btnMobile" >or</p>
+          <button  className="btnMobile"  id="signIn" onClick={onClickSignIn}>Sign In</button>
+
           </form>
         </div>
         <div className="form-container sign-in-container">
@@ -43,7 +46,10 @@ function Login() {
           <input type="password" placeholder="Password" />
           <a href="https://google.com">Forgot your password?</a>
           <button>Sign In</button>
-          <p className="mobileSignUp">or Sign up</p>
+          <p className="mobileSignUp">or             
+          
+</p>
+<button className="btnMobile" id="signUp" onClick={onClickSignUp}>Sign Up</button>
           </form>
         </div>
         <div className="overlay-container">
